@@ -7,11 +7,21 @@
 	<title>Random Image Generator</title>
 </head>
 <body>
-	<div class = "container">
-		<h1 class="heading">How is your day?</h1>
-		  <p class='text' id='text'>click here to form the photo of the day</p>
-		  <button class="btn" id="btn">click here to form the photo of the day</button>
+	<div>
+		<h1 class="heading">Build up a image of the day</h1>
+		  <p class='text' id='text'></p>
+		  <button class="btn" id="btn">click here to form a random word</button>
 	</div>
+	
+	<h1>Draw anything inspired by the Word of Day</h1>
+	<label for="stroke">Strokes</label>
+	<input id="stroke" name="stroke" type="color">
+	<label>Line Width</label>
+	<input id="lineWidth" name="lineWidth" type="number" value="5">
+	<div>
+	<canvas id="drawing-board"width="320" height="240" ></canvas>
+	</div>
+
 
 	<script defer src="script.js"></script>
 </body>

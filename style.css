@@ -1,17 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Gruppo&family=Kanit:wght@400;800&family=Raleway:wght@300&display=swap');
+
 body {
 	margin:0;
 	background:linear-gradient(to left bottom,lightblue,lightpink);
 	min-height:100vh;
-	display:flex;
 	justify-content:center;
 	align-items:center;
-	font-family: Helvetica;
-	font-size: 48px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 38px;
 }
 
 
-button{
-	height: 48px;
-	vertical-align: middle;
+text{
+	font-weight: bolder;
+	font-size:60px;
+}
+
+.btn{
+	padding:1em;
+	font-size:20px;
+	text-transform: capitalize;
+}
+
+#toolbar{
+	display:flex;
+	flex-direction: column;
+	padding:5px;
+	width:70px;
+}
+
+#toolbar button{
+	background-color:aqua;
+	border:none;
+	border-radius:4px;
+	color:white;
+	padding:2px;
 }
 
