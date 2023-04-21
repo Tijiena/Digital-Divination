@@ -56,13 +56,13 @@ const options={
         if(!isPainting){
             return;
         }
-    
+    }
     ctx.linwWidth=lineWidth;
     ctx.lineCap='round';
-    ctx.lineTo(e.clientX-canvasOffsetX,e.clientY);}
+    ctx.lineTo(e.clientX-canvasOffsetX,e.clientY);
    
 
-
+    
     canvas.addEventListener('mousedown',(e)=>{
         isPaint=true;
         startX=e.clientX;
