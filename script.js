@@ -6,9 +6,13 @@ const ctx=canvas.getContext('2d');
 
 const canvasOffsetX=canvas.offsetLeft;
 const canvasOffsetY=canvas.offsetTop;
+console.log(canvas.width);
+console.log(canvas.height);
 
-canvas.width=window.innerWidth-canvasOffsetX;
+/*canvas.width=window.innerWidth-canvasOffsetX;
 canvas.height=window.innerHeight-canvasOffsetY;
+console.log(canvas.width);
+console.log(canvas.height);*/
 
 const apikey="sRN2BH0Xmvjz92FfSTwpuw==lWvoYpamYJ0IjO3G";
  
@@ -39,7 +43,7 @@ const options={
     let isPainting=false;
     let lineWidth=5;
 
-    toolbar.addEventListener('click',e=>{
+   /* toolbar.addEventListener('click',e=>{
         if(e.target.id==='clear'){
             ctx.clearRect(0,0,canvas.width,canvas.height);}
         });
@@ -56,10 +60,10 @@ const options={
         if(!isPainting){
             return;
         }
-    }
+    
     ctx.linwWidth=lineWidth;
     ctx.lineCap='round';
-    ctx.lineTo(e.clientX-canvasOffsetX,e.clientY);
+    ctx.lineTo(e.clientX-canvasOffsetX,e.clientY);}
    
 
     
@@ -75,6 +79,6 @@ const options={
         ctx.beginPath();
     });
 
-    canvas.addEventListener('mousemove',draw);
+    canvas.addEventListener('mousemove',draw);*/
         
     
