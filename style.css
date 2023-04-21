@@ -1,28 +1,17 @@
 body {
+	margin:0;
+	background:linear-gradient(to left bottom,lightblue,lightpink);
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 	font-family: Helvetica;
 	font-size: 48px;
 }
 
-.container {
-	max-width: 600px;
-	margin: 0 auto;
-}
 
 button{
 	height: 48px;
 	vertical-align: middle;
 }
 
-#emoji {
-	font-size: 48px;
-}
-
-form {
-	display:inline;
-
-}
-
-input[type="text"] {
-	height: 48px;
-	font-size:48px;
-}

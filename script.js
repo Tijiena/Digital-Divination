@@ -1,15 +1,26 @@
-const api_key="12dd5236acb253bc5ad2984432bf35ff";
-let btn=document.querySelector("button");
-btn.addEventListener('click',()=>{
-    let form=document.getElementById('form');
-    city=form.elements[0].value;
-    getweather(city);
-    async function getweather(city){
-        let api_url="https://api.openweathermap.org/data/2.5/weather?q="+ city+ "&appid="+api_key+"&unit-imperial"
+const btnEl = document.getElementById('btn')
+const textEl=document.getElementById('text')
 
-        const response = await fetch(api_url);
-        const data=await response.json();
-        let temp=data.main.temp;
-        document.getElementById("result").textContent="The temperature in "+city+" right now is "+temp
+const apikey="sRN2BH0Xmvjz92FfSTwpuw==lWvoYpamYJ0IjO3G";
+ 
+  
+ const apiURL= 'https://api.api-ninjas.com/v1/randomword';
+
+const options={
+    method:"GET",
+    headers:{
+        "X-Api-Key":apikey,
     }
-})
+
+};
+  
+ async function getText(){
+    textEl.innerText="Updating...";
+    const response=await fetch(apiURL,options);
+    const data = await response.json();
+    console.log(data);
+    textEl.innerText=data.word;
+  }
+ 
+ 
+    btnEl.addEventListener("click",getText);
